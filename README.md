@@ -16,6 +16,40 @@ yarn add bacon-node-line-stream
 
 ## Using
 
+Here's an example of creating a readable stream from a file and then converting that to a Bacon stream.
+
+```
+const createLineStream = require('bacon-node-line-stream');
+const fs = require('fs');
+
+//Create a read stream to read the file
+const readStream = fs.createReadStream('textFile.txt');
+
+//Create a bacon line stream
+const lineStream = createLineStream(readStream);
+
+//Create an error handler
+lineStream.onError(error => console.error(error));
+
+//Output the lines from the text file
+lineStream.onValue(line => console.log(line));
+```
+
+## Running the Example
+
+After downloading the source, you can run an example which reads from a file and outputs the contents of that file line by line:
+
+```
+yarn fileExample example/textFile.txt
+```
+
+This command runs the example/fileExample.js file and passes it the text file to read from.
+
+You can replace "example/textFile.txt" with any text file. For example, we could output the example source file:
+
+```
+yarn fileExample example/fileExample.js
+```
 
 ## Running the Tests
 
