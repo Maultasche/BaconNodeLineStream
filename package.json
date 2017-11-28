@@ -4,7 +4,7 @@
   "description": "Converts a Node.js readable stream to a Bacon stream that emits lines of text",
   "main": "src/index.js",
   "repository": "https://github.com/Maultasche/BaconNodeLineStream.git",
-  "author": "Maultasche",
+  "author": "Kevin Peter",
   "license": "MIT",
   "scripts": {
     "test": "jest",

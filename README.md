@@ -18,7 +18,7 @@ yarn add bacon-node-line-stream
 
 Here's an example of creating a readable stream from a file and then converting that to a Bacon stream.
 
-```
+```javascript
 const createLineStream = require('bacon-node-line-stream');
 const fs = require('fs');
 
@@ -61,3 +61,7 @@ After downloading, install the dependencies:
 Then run the unit tests:
 
  ```yarn test```
+
+## License
+
+This package is licensed under the MIT license.
