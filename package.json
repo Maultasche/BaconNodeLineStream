@@ -2,6 +2,7 @@
   "name": "bacon-node-line-stream",
   "version": "1.0.0",
   "description": "Converts a Node.js readable stream to a Bacon stream that emits lines of text",
+  "keywords": ["bacon", "node", "stream"], 
   "main": "src/index.js",
   "repository": "https://github.com/Maultasche/BaconNodeLineStream.git",
   "author": "Kevin Peter",
